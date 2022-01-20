@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description" style="font-style: italic;">Thank you for taking the time to help us improve the plataform</p>
+
+        <!-- Form -->
+        <div id="formConfig">
+            <form action="" id="survey-form">
+                <label class="changeDisp" for="name" id="name-label" >Name</label>
+                <input class="inputAlign" type="text" id="name" placeholder="Enter your name" required>
+                <label class="changeDisp" for="email" id="email-label">Email</label>
+                <input class="inputAlign" type="email" id="email" placeholder="Enter your Email" required>
+                <label class="changeDisp" for="number" id="number-label">Age <span>(optional)</span></label>
+                <input class="inputAlign" type="number" id="number" placeholder="Age" min="10" max="100">
+                <label class="changeDisp" for="dropdown">Which option best describes your current role?</label>
+                <select name="dropdown" id="dropdown">
+                    <option selected="true" disabled="disabled">Select Current Role</option>
+                    <option value="student">Student</option>
+                    <option value="fullTime">Full Time Job</option>
+                    <option value="student">Full Time Learner</option>
+                    <option value="student">Prefer not to say</option>
+                    <option value="student">Other</option>
+                </select>
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <div><input class="inputRadio" type="radio" id="definitely" name="recommend" value="definitely" checked>
+                    <label class="radioBtn" for="definitely">Definitely</label>
+                </div>
+                <div><input class="inputRadio" type="radio" id="maybe" name="recommend" value="maybe">
+                    <label class="radioBtn" for="maybe">Maybe</label>
+                </div>
+                <div><input class="inputRadio" type="radio" id="notSure" name="recommend" value="notSure">
+                    <label class="radioBtn" for="notSure">Not Sure</label>
+                </div>
+                <!-- Favorite features -->
+                <label class="changeDisp favoriteInfo" for="dropdown">What is your favorite feature of
+                    freeCodeCamp?</label>
+                <select name="dropdown" id="dropdown">
+                    <option selected="true" disabled="disabled">Select an option</option>
+                    <option value="student">Challenges</option>
+                    <option value="fullTime">Projects</option>
+                    <option value="student">Community</option>
+                    <option value="student">Open Source</option>
+                </select>
+
+
+                <!-- What to see improved form -->
+                <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+                <div><input class="inputRadio" type="checkbox" id="front-end" name="front-end" value="front-end">
+                    <label class="radioBtn" for="front-end">Front-end Projects</label>
+                </div>
+                <div><input class="inputRadio" type="checkbox" id="back-end" name="back-end" value="back-end">
+                    <label class="radioBtn" for="back-end">Back-end Projects</label>
+                </div>
+                <div><input class="inputRadio" type="checkbox" id="data" name="data" value="data">
+                    <label class="radioBtn" for="data">Data Visualization</label>
+                </div>
+                <div><input class="inputRadio" type="checkbox" id="challenge" name="challenge" value="challenge">
+                    <label class="radioBtn" for="challenge">Challenges</label>
+                    <div><input class="inputRadio" type="checkbox" id="openSource" name="openSource" value="openSource">
+                        <label class="radioBtn" for="openSource">Open Source Community</label>
+                    </div>
+                    <div><input class="inputRadio" type="checkbox" id="gitter" name="gitter" value="gitter">
+                        <label class="radioBtn" for="gitter">Gitter help rooms</label>
+                    </div>
+                    <div><input class="inputRadio" type="checkbox" id="videos" name="videos" value="videos">
+                        <label class="radioBtn" for="videos">Videos</label>
+                    </div>
+                    <div><input class="inputRadio" type="checkbox" id="city" name="city" value="city">
+                        <label class="radioBtn" for="city">City Meetups</label>
+                    </div>
+                    <div><input class="inputRadio" type="checkbox" id="wiki" name="wiki" value="wiki">
+                        <label class="radioBtn" for="wiki">Wiki</label>
+                    </div>
+                    <div><input class="inputRadio" type="checkbox" id="forum" name="forum" value="forum">
+                        <label class="radioBtn" for="forum">Forum</label>
+                    </div>
+                    <div><input class="inputRadio" type="checkbox" id="additional" name="additional" value="additional">
+                        <label class="radioBtn" for="additional">Additional Courses</label>
+                    </div>
+
+                    <!-- comments or suggestions -->
+                    <div id="textComments">
+                        <p>Any comments or suggestions?</p>
+                        <textarea name="comments" id="comments" cols="5" rows="5"
+                            placeholder="Enter your comment here..."></textarea>
+                    </div>
+                    </select>
+
+                    <!-- submit -->
+                    <input type="submit" value="Submit" id="submit" class="btn" />
+            </form>
+
+
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
+
+<!-- User Story #1: I can see a title with id="title" in H1 sized text.
+
+User Story #2: I can see a short explanation with id="description" in P sized text.
+
+User Story #3: I can see a form with id="survey-form".
+
+User Story #4: Inside the form element, I am required to enter my name in a field with id="name".
+
+User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
+
+User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
+
+User Story #7: Inside the form, I can enter a number in a field with id="number".
+
+User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+
+User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
+
+User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+
+User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
+
+User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
+
+User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+
+User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
+
+User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
+
+User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    color: seashell;
+    background-image: url(https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position-x: -300px;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Mono', monospace;
+}
+
+span {
+    font-size: 0.9rem;
+}
+
+#container {
+    background-color: rgba(104, 103, 172, 0.7);
+    text-align: center;
+}
+
+#title {
+    padding: 3rem 0rem 1rem;
+    font-weight: 500;
+}
+
+#formConfig {
+    background-color: rgba(0,0,0, 0.8);
+    width: fit-content;
+    min-width: 40%;
+    margin: 2rem auto 0;
+    border-radius: 5px;
+    text-align: left;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+}
+
+
+.changeDisp {
+    font-weight: 400;
+    font-size: 1.1rem;
+    display: block;
+    padding-top: 0.5rem;
+}
+
+#survey-form>p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+#survey-form>.inputAlign {
+    margin-top: 0.5rem;
+    padding: 8px 0 8px 8px;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: medium;
+    border-radius: 5px;
+    border-color: black;
+    outline: 0;
+}
+
+#survey-form>select {
+    border-radius: 5px;
+    border-color: black;
+    padding: 8px 0 8px 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 102%;
+    font-size: medium;
+}
+
+.inputRadio {
+    margin-top: 0.8rem;
+}
+
+.changeDisp.favoriteInfo {
+    margin-top: 2rem;
+}
+
+#textComments {
+    margin: 2rem 0;
+    padding-right: 1rem;
+}
+
+#comments {
+    font-family: inherit;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 10px;
+    display: block;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 101%;
+    padding: 10px;
+    background-color: #2ccf6b;
+    border: 0;
+    border-radius: 5px;
+    font: inherit;
+    outline: 0;
+    color: seashell;
+}
